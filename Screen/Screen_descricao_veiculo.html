@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descrição do Veículo</title>
 </head>
+
 <body>
     <h1>Detalhes do Veículo Selecionado</h1>
-    <div id="carro_selecionado"></div>
+    <div id="carro_selecionado">
+        <div class="box_veiculo" style="display: none;">]
 
-    <script>
-        // Recupera o nome do carro selecionado do localStorage
-        const carroSelecionado = localStorage.getItem('carro_visto');
+            <img class="foto_veiculo" width="200">
+            <h2 class="nome_veiculo"></h2>
+            <p class="preco_veiculo"></p>
+            <p class="ano_veiculo"></p>
+            <p class="km_veiculo"></p>
+            <p class="cor_veiculo"></p>
+            <p class="gasolina_veiculo"></p>
+            <p class="marcha_veiculo"></p>
 
-        // Verifica se há um carro selecionado
-        if (carroSelecionado) {
-            // Exibe o nome do carro na página
-            document.getElementById('carro_selecionado').textContent = `Carro Selecionado: ${carroSelecionado}`;
-        } else {
-            // Se não houver carro selecionado, exibe uma mensagem de erro
-            document.getElementById('carro_selecionado').textContent = "Nenhum carro selecionado.";
-        }
-    </script>
+        </div>
+    </div>
+
+
+
+    <script src="js/script_descricao_veiculo/script_descricao_veiculo.js"></script>
+    <script src="js/script_lista_veiculos.js"></script>
+
 </body>
+
 </html>

@@ -15,8 +15,4 @@ const lista_veiculos = [
         '2024',
         '2022'
     ],
-    [
-        'https://chat.openai.com/c/3d6996c6-efc2-4733-a6ca-f947d2ac6e44',
-        'https://www.youtube.com/watch?v=IvPT2QuCIOA&list=PLMfmPcMcnzA9iksyoitRY7IeqFY8Iridy&index=15&ab_channel=DJSnakeVEVO'
-    ]
 ];
