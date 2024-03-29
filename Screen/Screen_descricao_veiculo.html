@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descrição do Veículo</title>
+</head>
+<body>
+    <h1>Detalhes do Veículo Selecionado</h1>
+    <div id="carro_selecionado"></div>
+
+    <script>
+        // Recupera o nome do carro selecionado do localStorage
+        const carroSelecionado = localStorage.getItem('carro_visto');
+
+        // Verifica se há um carro selecionado
+        if (carroSelecionado) {
+            // Exibe o nome do carro na página
+            document.getElementById('carro_selecionado').textContent = `Carro Selecionado: ${carroSelecionado}`;
+        } else {
+            // Se não houver carro selecionado, exibe uma mensagem de erro
+            document.getElementById('carro_selecionado').textContent = "Nenhum carro selecionado.";
+        }
+    </script>
+</body>
+</html>
