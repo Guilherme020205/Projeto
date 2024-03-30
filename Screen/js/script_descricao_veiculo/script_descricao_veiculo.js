@@ -17,9 +17,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const clone = template.cloneNode(true);
                 clone.querySelector('.foto_veiculo').src = lista[0][i];
-                clone.querySelector('.nome_veiculo').textContent = lista[1][i];
-                clone.querySelector('.preco_veiculo').textContent = lista[2][i];
-                clone.querySelector('.ano_veiculo').textContent = lista[3][i];
+                clone.querySelector('.marca_veiculo').textContent = lista[1][i];
+                clone.querySelector('.preco_veiculo').textContent = 'R$ ' + lista[2][i];
+                clone.querySelector('.modelo_veiculo').textContent = 'Modelo: ' + lista[3][i];
+                clone.querySelector('.ano_veiculo').textContent = 'Ano: ' + lista[4][i];
+                clone.querySelector('.km_veiculo').textContent = 'KM: ' + lista[5][i];
+                clone.querySelector('.cor_veiculo').textContent = 'Cor: ' + lista[6][i];
+                clone.querySelector('.gasolina_veiculo').textContent = 'Combustível: ' + lista[7][i];
+                clone.querySelector('.marcha_veiculo').textContent = 'Marcha: ' + lista[8][i];
+                clone.querySelector('.carroceria_veiculo').textContent = 'Carroceria: ' + lista[9][i];
                 clone.style.display = "block";
                 document.body.appendChild(clone); // Adiciona o clone ao corpo do documento
             }

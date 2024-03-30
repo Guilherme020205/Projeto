@@ -9,9 +9,9 @@
             for (let i = 0; i < lista[0].length; i++) {
                 const clone = template.cloneNode(true);
                 clone.querySelector('.foto_veiculo').src = lista[0][i];
-                clone.querySelector('.nome_veiculo').textContent = lista[1][i];
+                clone.querySelector('.marca_veiculo').textContent = lista[1][i];
                 clone.querySelector('.preco_veiculo').textContent = lista[2][i];
-                clone.querySelector('.ano_veiculo').textContent = lista[3][i];
+                clone.querySelector('.ano_veiculo').textContent = lista[4][i];
                 clone.style.display = "block"; 
 
 
