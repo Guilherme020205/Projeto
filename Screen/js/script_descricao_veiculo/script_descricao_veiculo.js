@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     const lista_inscricao_veiculos = inscricao_veiculos;
-    // const lista_fotos_dos_veiculos = fotos_capa_veiculos;
-    const lista_fotos_dos_veiculos = fotos_dos_veiculos;
+    const lista_fotos_dos_veiculos = fotos_capa_veiculos;
+    // const lista_fotos_dos_veiculos = fotos_dos_veiculos;
     const lista_marca = marcas_veiculos;
     const lista_modelo = modelos_veiculos;
     const lista_preco = precos_veiculos;
