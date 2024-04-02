@@ -8,7 +8,7 @@
             const template = document.querySelector('.box_veiculos');
             const container = document.querySelector('.box_anucios');
 
-            for (let i = 0; i < lista_marca[0].length; i++) {
+            for (let i = 0; i < lista_marca.length; i++) {
                 const clone = template.cloneNode(true);
                 clone.querySelector('.foto_veiculo').src = lista_foto_capa[i];
                 clone.querySelector('.marca_veiculo').textContent = lista_marca[i];
