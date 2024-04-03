@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     const lista_inscricao_veiculos = inscricao_veiculos;
-    const lista_fotos_dos_veiculos = fotos_capa_veiculos;
-    // const lista_fotos_dos_veiculos = fotos_dos_veiculos;
+    // const lista_fotos_dos_veiculos = fotos_capa_veiculos;
+    const lista_fotos_dos_veiculos = fotos_dos_veiculos;
     const lista_marca = marcas_veiculos;
     const lista_modelo = modelos_veiculos;
     const lista_preco = precos_veiculos;
@@ -27,9 +27,19 @@ document.addEventListener('DOMContentLoaded', function () {
         for (let i = 0; i < lista_inscricao_veiculos.length; i++) {
             if (carroSelecionado == lista_inscricao_veiculos[i]) {
 
+                for (let p = 0; p < lista_fotos_dos_veiculos.length; p++) {
+                    if (lista_fotos_dos_veiculos[p][i] != "") {
 
-                const fotos_veiculo = box_foto.querySelector('.fotos_veiculo');
-                fotos_veiculo.src = lista_fotos_dos_veiculos[i];
+                        const fotos_veiculo = box_foto.querySelector('.fotos_veiculo');
+                        fotos_veiculo.src = lista_fotos_dos_veiculos[p][i];
+
+                    } else {
+
+                        const fotos_veiculo = box_foto.querySelector('.fotos_veiculo');
+                        fotos_veiculo.src = "https://portal.crea-sc.org.br/wp-content/uploads/2017/11/imagem-indisponivel-para-produtos-sem-imagem_15_5.jpg";
+                    
+                    }
+                }
 
                 const marca_veiculo = box_descricao_pai.querySelector('.marca_veiculo');
                 marca_veiculo.textContent = lista_marca[i];
