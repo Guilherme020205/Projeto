@@ -15,9 +15,9 @@ const sobre_veiculos = ['Full PPF Faróis de LED Spliter em Fibra de Carbono Aer
 
 const fotos_dos_veiculos = [
     ['https://bocamafrapremium.com.br/wp-content/uploads/2023/10/423c4b292fe74bdf8a5253b154cb2459_1638536008722.jpeg', 'https://img.olx.com.br/images/77/779411137368401.jpg'],
-    ['https://bocamafrapremium.com.br/wp-content/uploads/2023/10/964b58675f1f4c55b07c2a87caa357a0_1638536008656.jpeg', 'https://img.olx.com.br/images/77/779411137368401.jpg'],
-    ['https://bocamafrapremium.com.br/wp-content/uploads/2023/10/b47f2315f7554d9d92b19d0c316b7cde_1638536008735.jpeg', 'https://img.olx.com.br/images/77/779411137368401.jpg'],
-    ['https://bocamafrapremium.com.br/wp-content/uploads/2023/10/236f716bcc0a4d44af46baef93cccedc_1638536008659.jpeg'],
-    ['https://bocamafrapremium.com.br/wp-content/uploads/2023/10/58283d84c48d4bedae47e1d57a19d782_1638536008625.jpeg']
+    ['https://bocamafrapremium.com.br/wp-content/uploads/2023/10/964b58675f1f4c55b07c2a87caa357a0_1638536008656.jpeg', 'https://revistacarro.com.br/wp-content/uploads/2021/06/BMW-X4-M-Competition_3.jpg'],
+    ['https://bocamafrapremium.com.br/wp-content/uploads/2023/10/b47f2315f7554d9d92b19d0c316b7cde_1638536008735.jpeg', 'https://fotos.socarrao.com.br/1028427/5240569/5240569OR_1701263355_82_570.jpg'],
+    ['https://bocamafrapremium.com.br/wp-content/uploads/2023/10/236f716bcc0a4d44af46baef93cccedc_1638536008659.jpeg', ''],
+    ['https://bocamafrapremium.com.br/wp-content/uploads/2023/10/58283d84c48d4bedae47e1d57a19d782_1638536008625.jpeg', '']
 
-]
+] 
