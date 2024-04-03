@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
             localStorage.setItem('carro_visto', carro_visto);
             location.href = "Screen_descricao_veiculo.html";
         });
-
+ 
         container.appendChild(clone);
     }
 });
