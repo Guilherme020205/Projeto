@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Carros</title>
     <link rel="stylesheet" href="css/css_home/style_cabecalho.css">
-</head> 
+    <link rel="stylesheet" href="css/css_home/style_form_login.css">
+    <link rel="stylesheet" href="css/css_botoes/botao1.css">
+</head>
+
 <body>
     <header class="cabecalho">
         <h1 class="titleAutoCarros">Auto Carros cabecalho</h1>
+
+        <!-- BOTÂO DE LOGIN -->
+        <div class="box_button_login">
+            <div class="center">
+                <button class="btn" onclick="document.getElementById('id01').style.display='block'">
+                    <svg width="80px" height="50px" viewBox="0 0 80 50" class="border">
+                        <polyline points="58,1 58,59 1,59 1,1 58,1" class="bg-line" />
+                        <polyline points="58,1 58,59 1,59 1,1 58,1" class="hl-line" />
+                    </svg>
+                    <span>Login</span>
+                </button>
+            </div>
+        </div>
+        <!-- BOTÂO DE LOGIN -->
+
     </header>
-     
+
     <div class="box_anucios">
         <div class="box_veiculos" style="display: none;">
             <img class="foto_veiculo" width="200">
@@ -21,13 +40,40 @@
         </div>
     </div>
 
+    <!-- TELA LOGIN MODAL -->
+    <div id="id01" class="modal">
+
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Fechar a tela">&times;</span>
+
+        <form class="modal-content animate" action="/Screen/Screen_home.html">
+            <div class="imgcontainer">
+                <img src="../img/carro.png" class="icon_logo">
+            </div>
+
+            <div class="container2">
+                <label for="uname"><b>Usuario</b></label>
+                <input type="text" placeholder="Usuario" name="usuario" required>
+
+                <label for="psw"><b>Senha</b></label>
+                <input type="password" placeholder="Senha" name="senha" required>
+
+                <button class="button_login" type="submit">Login</button>
+
+            </div>
+
+        </form>
+    </div>
+    <!-- TELA LOGIN MODAL -->
+
     <footer class="rodape"></footer>
-    
+
     <script src="js/script_home/script_mostra_lista.js"></script>
     <script src="js/script_mostra_rodape.js"></script>
     <script src="dados/lista_info_veiculos.js"></script>
-    <script src="dados/lista_info_dados_revendedora.js"></script>   
+    <script src="dados/lista_info_dados_revendedora.js"></script>
 
-    
+
 </body>
+
 </html>
