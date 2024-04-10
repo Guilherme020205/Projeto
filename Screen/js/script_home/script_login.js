@@ -10,11 +10,10 @@ form.onsubmit = (e) => {
     const usuario = inputs.get('usuario');
     const senha = inputs.get('senha');
 
-    if (usuario == "admin" && senha == "123") {
+    if (usuario === "admin" && senha === "123") {
+        sessionStorage.setItem('usuarioLogado', '1');
         location.href = "Screen_cadastro_veiculos.html";
-        const usuario_logou = false;
-            localStorage.setItem('false', usuario_logou);
     } else {
-        alert("Usuario ou Senha INCORRETOS!")
+        alert("Usuário ou senha incorretos!");
     }
 }
