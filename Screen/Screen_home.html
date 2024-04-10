@@ -13,7 +13,7 @@
 <body>
     <header class="cabecalho">
         <h1 class="titleAutoCarros">Auto Carros cabecalho</h1>
-
+ 
         <!-- BOTÂO DE LOGIN -->
         <div class="box_button_login">
             <div class="center">
@@ -46,16 +46,17 @@
         <span onclick="document.getElementById('id01').style.display='none'" class="close"
             title="Fechar a tela">&times;</span>
 
-        <form class="modal-content animate" action="/Screen/Screen_home.html">
+        <form class="modal-content animate">
+
             <div class="imgcontainer">
                 <img src="../img/carro.png" class="icon_logo">
             </div>
 
             <div class="container2">
-                <label for="uname"><b>Usuario</b></label>
+                <label for="usuario"><b>Usuario</b></label>
                 <input type="text" placeholder="Usuario" name="usuario" required>
 
-                <label for="psw"><b>Senha</b></label>
+                <label for="senha"><b>Senha</b></label>
                 <input type="password" placeholder="Senha" name="senha" required>
 
                 <button class="button_login" type="submit">Login</button>
@@ -72,6 +73,7 @@
     <script src="js/script_mostra_rodape.js"></script>
     <script src="dados/lista_info_veiculos.js"></script>
     <script src="dados/lista_info_dados_revendedora.js"></script>
+    <script src="js/script_home/script_login.js"></script>
 
 
 </body>
