@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const lista_modelo = modelos_veiculos;
     const lista_preco = precos_veiculos;
     const lista_ano = anos_veiculos;
-    const lista_km = km_veiculos
+    const lista_km = km_veiculos 
     const lista_cor = cor_veiculos
     const lista_combustivel = combustivel_veiculos
     const lista_marcha = marcha_veiculos
