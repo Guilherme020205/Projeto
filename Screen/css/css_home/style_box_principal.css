@@ -1,0 +1,51 @@
+.box_anucios {
+
+    background-color: rgba(255, 255, 255, 0.534);
+    width: 76vw;
+    padding: 1%;
+    margin-top: 8%;
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    gap: 50px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.box_veiculos {
+
+    background-color: rgba(212, 251, 243, 0.868);
+    width: auto;
+    height: 25vw;
+    padding: 1%;
+    gap: 50px;
+
+}
+
+.foto_veiculo {
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 1%;
+}
+
+.marca_veiculo {
+    font-size: 120%;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 4%;
+
+}
+
+.preco_veiculo {
+    font-size: 90%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 2%;
+
+}
+
+.ano_veiculo {
+    font-size: 90%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10%;
+
+}

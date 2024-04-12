@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Carros</title>
-    <link rel="stylesheet" href="css/css_home/style_cabecalho.css">
+
+    <link rel="stylesheet" href="css/css_home/style_cabecalho_e_rodape.css">
     <link rel="stylesheet" href="css/css_home/style_form_login.css">
-    <link rel="stylesheet" href="css/css_home/style_box_anucios.css">
+    <link rel="stylesheet" href="css/css_home/style_box_principal.css">
     <link rel="stylesheet" href="css/css_botoes/botao1.css">
+    <link rel="stylesheet" href="css/css_home/botao_ver_mais.css">
+
 </head>
 
-<body style="background-color: rgb(58, 57, 57);"> 
+<body style="background-color: rgb(58, 57, 57);">
     <header class="cabecalho">
         <h1 class="titleAutoCarros">Auto Carros cabecalho</h1>
- 
+
         <!-- BOTÂO DE LOGIN -->
         <div class="box_button_login">
             <div class="center">
@@ -31,14 +34,18 @@
 
     </header>
 
-    <div class="box_anucios">
-        <div class="box_veiculos" style="display: none;">
-            <img class="foto_veiculo" width="200">
-            <h2 class="marca_veiculo"></h2>
-            <p class="preco_veiculo"></p>
-            <p class="ano_veiculo"></p>
-            <button class="ver_mais_btn">Ver mais</button>
+    <div class="box_principal">
+
+        <div class="box_anucios">
+            <div class="box_veiculos" style="display: none;">
+                <img class="foto_veiculo" width="200" height="150">
+                <h2 class="marca_veiculo"></h2>
+                <p class="preco_veiculo"></p>
+                <p class="ano_veiculo"></p>
+                <button class="ver_mais_btn">Ver mais</button>
+            </div>
         </div>
+
     </div>
 
     <!-- TELA LOGIN MODAL -->
@@ -53,7 +60,7 @@
                 <img src="../img/carro.png" class="icon_logo">
             </div>
 
-            <div class="container2"> 
+            <div class="container2">
                 <label for="usuario"><b>Usuario</b></label>
                 <input type="text" placeholder="Usuario" name="usuario" required>
 
@@ -68,7 +75,28 @@
     </div>
     <!-- TELA LOGIN MODAL -->
 
-    <footer class="rodape"></footer>
+    <footer class="rodape">
+        <img src="../img/carro.png" width="200" height="200">
+
+        <a href="https://maps.app.goo.gl/mWzyMYA2nogEthbb7">
+
+            <p class="localizacao">Av. Pedra Branca, 231, Palhoça SC, 88137-280</p>
+
+        </a>
+
+        <a href="https://api.whatsapp.com/send?phone=48991872908">
+
+            <p class="whatsapp">(48) 99187-2908</p>
+
+        </a>
+
+        <a href="mailto:seemannguilherme@gmail.com">
+
+            <p class="email">seemannguilherme@gmail.com</p>
+
+        </a>
+
+    </footer>
 
     <script src="js/script_home/script_mostra_lista.js"></script>
     <script src="js/script_mostra_rodape.js"></script>
