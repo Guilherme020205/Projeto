@@ -1,7 +1,7 @@
 .box_anucios {
 
     background-color: rgba(255, 255, 255, 0.534);
-    width: 1034px;
+    width: 76vw;
     padding: 1%;
     margin-top: 8%;
     margin-left: 2%;
@@ -17,10 +17,9 @@
 
     background-color: rgba(212, 251, 243, 0.868);
     width: auto;
-    height: 280px;
+    height: 25vw;
     padding: 1%;
     gap: 50px;
-    border-radius: 5px;
 
 }
 
