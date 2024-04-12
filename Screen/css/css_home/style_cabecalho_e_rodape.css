@@ -16,8 +16,28 @@ header {
 .rodape {
     margin-top: 70%;
     background-color: rgba(121, 235, 223, 0.523);
+    display: flex;
+    flex-direction: row;
     position: sticky;
+    align-items: center;
+    gap: 20vw;
     bottom: 0;
-    width: 100%;
     /* height: 40px; Define a altura do rodapé */
 }
+
+.logo_rodape {
+
+    width: 20vw;
+    height: 20vw;
+    margin-left: 5%;
+}
+
+
+
+.localizacao, .whatsapp, .email{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5vw;
+}
+
