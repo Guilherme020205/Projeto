@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         container.appendChild(clone);
     }
-
+ 
     // Obtém o botão pelo ID
     var botao_volta = document.getElementById("botao_volta");
     var botao_adiante = document.getElementById("botao_adiante");
