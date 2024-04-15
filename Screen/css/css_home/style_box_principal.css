@@ -1,52 +1,74 @@
-.box_anucios {
+@media (min-width: 1300px) {
 
-    background-color: rgba(255, 255, 255, 0.534);
-    width: 1034px;
-    padding: 1%;
-    margin-top: 8%;
-    margin-left: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    gap: 50px;
-    /* align-items: center; */
-    /* justify-content: center; */
-}
+    .box_principal {
+        background-color: rgba(255, 255, 255, 0.534);
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        padding: 1%;
+        margin-top: 8%;
+        margin-left: 2%;
+        gap: 50px;
 
-.box_veiculos {
+    }
+    .box_anucios {
 
-    background-color: rgba(212, 251, 243, 0.868);
-    width: auto;
-    height: 280px;
-    padding: 1%;
-    gap: 50px;
-    border-radius: 5px;
+        /* background-color:rgba(255, 0, 0, 0.334); */
+        width: 1156px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 
-}
+    .box_veiculos {
 
-.foto_veiculo {
-    box-shadow: 1px 1px 5px black;
-    margin-bottom: 1%;
-}
+        background-color: rgba(212, 251, 243, 0.868);
+        width: auto;
+        height: 280px;
+        padding: 1%;
+        gap: 50px;
+        border-radius: 5px;
 
-.marca_veiculo {
-    font-size: 120%;
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 4%;
+    }
 
-}
+    .foto_veiculo {
+        box-shadow: 1px 1px 5px black;
+        margin-bottom: 1%;
+    }
 
-.preco_veiculo {
-    font-size: 90%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-bottom: 2%;
+    .marca_veiculo {
+        font-size: 120%;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 4%;
 
-}
+    }
 
-.ano_veiculo {
-    font-size: 90%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 10%;
+    .preco_veiculo {
+        font-size: 90%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-bottom: 2%;
 
+    }
+
+    .ano_veiculo {
+        font-size: 90%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 10%;
+
+    }
+
+    .passar_tela {
+        background-color: rgba(0, 255, 229, 0.334);
+        width: auto;
+        padding: 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center ;
+        align-items: center;
+        gap: 30px;
+    } 
+    
 }

@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Carros</title>
-    	
+
     <link rel="icon" type="image/x-icon" href="/img/carro.png">
 
+    <link rel="stylesheet" href="css/css_home/style_geral.css">
     <link rel="stylesheet" href="css/css_home/style_cabecalho_e_rodape.css">
     <link rel="stylesheet" href="css/css_home/style_form_login.css">
     <link rel="stylesheet" href="css/css_home/style_box_principal.css">
@@ -15,28 +16,29 @@
     <link rel="stylesheet" href="css/css_home/botao_ver_mais.css">
 
 </head>
- 
+
 <body style="background-color: rgb(58, 57, 57);">
-    <header class="cabecalho">
-        <a href="Screen_home.html">
-            <img src="../img/logo_loja.png" class="logo_com_nome">
-        </a>
+    <header>
+        <div class="box_header">
+            <a href="Screen_home.html">
+                <img src="../img/logo_loja.png" class="logo_com_nome">
+            </a>
 
 
-        <!-- BOTÂO DE LOGIN -->
-        <div class="box_button_login">
-            <div class="center">
-                <button class="btn" onclick="document.getElementById('id01').style.display='block'">
-                    <svg width="80px" height="50px" viewBox="0 0 80 50" class="border">
-                        <polyline points="58,1 58,59 1,59 1,1 58,1" class="bg-line" />
-                        <polyline points="58,1 58,59 1,59 1,1 58,1" class="hl-line" />
-                    </svg>
-                    <span>Login</span>
-                </button>
+            <!-- BOTÂO DE LOGIN -->
+            <div class="box_button_login">
+                <div class="center">
+                    <button class="btn" onclick="document.getElementById('id01').style.display='block'">
+                        <svg width="80px" height="50px" viewBox="0 0 80 50" class="border">
+                            <polyline points="58,1 58,59 1,59 1,1 58,1" class="bg-line" />
+                            <polyline points="58,1 58,59 1,59 1,1 58,1" class="hl-line" />
+                        </svg>
+                        <span>Login</span>
+                    </button>
+                </div>
             </div>
+            <!-- BOTÂO DE LOGIN -->
         </div>
-        <!-- BOTÂO DE LOGIN -->
-
     </header>
 
     <div class="box_principal">
@@ -49,6 +51,12 @@
                 <p class="ano_veiculo"></p>
                 <button class="ver_mais_btn">Ver mais</button>
             </div>
+
+        </div>
+        <div class="passar_tela">
+            <p class="opcao1_pagina">1</p>
+            <p class="opcao2_pagina">2</p>
+            <p class="opcao3_pagina">3</p>
         </div>
 
     </div>
