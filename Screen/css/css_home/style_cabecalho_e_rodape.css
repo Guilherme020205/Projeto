@@ -17,15 +17,42 @@
         gap: 1100px;
     }
 
-    .rodape {
+    footer {
+        width: auto;
+        height: 0px;
         margin-top: 1150px;
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        align-items: center;
+        gap: 50px;
+        padding: 50px;
+        bottom: 0%;
+
+    }
+
+    .box_1_rodape {
+        width: 1550px;
+    }
+
+    .p_historia_loja {
+        text-align: center;
+        color: aliceblue;
+    }
+
+    .box_2_rodape {
         background-color: rgba(0, 255, 229, 0.334);
+        width: 100%;
         display: flex;
         flex-direction: row;
-        position: sticky;
         align-items: center;
         gap: 500px;
         padding: 50px;
+    }
+
+    .p_historia_loja {
+        display: flex;
+        position: sticky;
         bottom: 0;
     }
 
@@ -41,12 +68,21 @@
         width: 300px;
         height: 250px;
         margin-left: 50px;
+        transition: all 0.3s ease-in-out;
+
     }
-    
-    .infos_rodape{
+
+    .infos_rodape {
         text-decoration: none;
         color: #000000;
         font-family: 'Montserrat', sans-serif;
         margin-bottom: 0.5px;
     }
+
+    .logo_com_nome_rodape:hover {
+        transform: scale(1.1);
+        transform: rotate(10deg);
+    }
+
+
 }
