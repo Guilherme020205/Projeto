@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Carros</title>
 
-    <link rel="icon" type="image/x-icon" href="/img/carro.png">
+    <link rel="icon" type="image/x-icon" href="../img/logo_loja.png">
 
     <link rel="stylesheet" href="css/css_home/style_geral.css">
     <link rel="stylesheet" href="css/css_home/style_cabecalho_e_rodape.css">
@@ -18,28 +18,7 @@
 </head>
 
 <body style="background-color: rgb(58, 57, 57);">
-    <header>
-        <div class="box_header">
-            <a href="Screen_home.html">
-                <img src="../img/logo_loja.png" class="logo_com_nome">
-            </a>
 
-
-            <!-- BOTÂO DE LOGIN -->
-            <div class="box_button_login">
-                <div class="center">
-                    <button class="btn" onclick="document.getElementById('id01').style.display='block'">
-                        <svg width="80px" height="50px" viewBox="0 0 80 50" class="border">
-                            <polyline points="58,1 58,59 1,59 1,1 58,1" class="bg-line" />
-                            <polyline points="58,1 58,59 1,59 1,1 58,1" class="hl-line" />
-                        </svg>
-                        <span>Login</span>
-                    </button>
-                </div>
-            </div>
-            <!-- BOTÂO DE LOGIN -->
-        </div>
-    </header>
 
     <div class="box_principal">
 
@@ -59,6 +38,29 @@
             <button id="botao_adiante">adiante</button>
         </div>
     </div>
+
+    <header>
+        <div class="box_header">
+            <a href="Screen_home.html">
+                <img src="../img/logo_loja.png" class="logo_com_nome_cabecalho">
+            </a>
+
+
+            <!-- BOTÂO DE LOGIN -->
+            <div class="box_button_login">
+                <div class="center">
+                    <button class="btn" onclick="document.getElementById('id01').style.display='block'">
+                        <svg width="80px" height="50px" viewBox="0 0 80 50" class="border">
+                            <polyline points="58,1 58,59 1,59 1,1 58,1" class="bg-line" />
+                            <polyline points="58,1 58,59 1,59 1,1 58,1" class="hl-line" />
+                        </svg>
+                        <span>Login</span>
+                    </button>
+                </div>
+            </div>
+            <!-- BOTÂO DE LOGIN -->
+        </div>
+    </header>
 
     <!-- TELA LOGIN MODAL -->
     <div id="id01" class="modal">
@@ -89,22 +91,26 @@
 
     <footer class="rodape">
 
-        <img src="../img/logo_loja.png" class="logo_com_nome">
+        <img src="../img/logo_loja.png" class="logo_com_nome_rodape">
 
         <div>
-
-            <a href="https://maps.app.goo.gl/mWzyMYA2nogEthbb7">
-                <p class="localizacao">Av. Pedra Branca, 231, Palhoça SC, 88137-280</p>
-            </a>
-
-            <a href="https://api.whatsapp.com/send?phone=48991872908">
-                <p class="whatsapp">(48) 99187-2908</p>
-            </a>
-
-            <a href="mailto:seemannguilherme@gmail.com" class="email">
-                <p class="email">seemannguilherme@gmail.com</p>
-            </a>
-
+            <ul>
+                <li>
+                    <a class="infos_rodape" href="https://maps.app.goo.gl/mWzyMYA2nogEthbb7">
+                        <p>Av. Pedra Branca, 231, Palhoça SC, 88137-280</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="infos_rodape" href="https://api.whatsapp.com/send?phone=48991872908">
+                        <p>(48) 99187-2908</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="infos_rodape" href="mailto:seemannguilherme@gmail.com" class="email">
+                        <p>seemannguilherme@gmail.com</p>
+                    </a>
+                </li>
+            </ul>
         </div>
 
     </footer>
