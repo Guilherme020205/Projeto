@@ -1,7 +1,7 @@
 @media (min-width: 1300px) {
 
     .box_principal {
-        background-color: rgba(255, 255, 255, 0.534);
+        background-color: rgba(254, 254, 254, 0.47);
         width: auto;
         display: flex;
         flex-direction: column;
@@ -12,6 +12,7 @@
         margin-left: 2%;
         gap: 50px;
         margin-top: 200px;
+        border-radius: 5px;
 
     }
 
@@ -26,7 +27,7 @@
 
     .box_veiculos {
 
-        background-color: rgba(212, 251, 243, 0.868);
+        background-color: rgba(255, 255, 255, 0.868);
         width: auto;
         height: 280px;
         padding: 1%;
@@ -38,12 +39,13 @@
     .foto_veiculo {
         box-shadow: 1px 1px 5px black;
         margin-bottom: 1%;
+        border-radius:5px;
         transition: all 0.3s ease-in-out;
     }
 
     .foto_veiculo:hover {
         transform: scale(1.05);
-        box-shadow: 0 0 100px rgb(255, 255, 255);
+        box-shadow: 0 0 100px rgb(63, 66, 66);
         border-radius: 0px;
     }
 
