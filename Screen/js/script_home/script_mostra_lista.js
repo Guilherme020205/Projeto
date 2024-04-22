@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    document.body.style.zoom = "80%"
 
     // Função para atualizar a lista de veículos exibida
     function atualizarListaVeiculos() {

@@ -85,12 +85,13 @@
 
     }
 
-    .box_1_rodape>.p_historia_loja {
+    .box_1_rodape> .p_historia_loja {
 
         display: flex;
         position: sticky;
         color: aliceblue;
         bottom: 0;
+        padding: 50px;
 
     }
 
