@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     let lista_comeca = 0;
-    let lista_termina = 30;
+    let lista_termina = 20;
 
     // Obtém os botões de navegação
     var botao_volta = document.getElementById("botao_volta");
@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Adiciona um evento de clique ao botão "Voltar"
     botao_volta.addEventListener("click", function () {
         pagina_atual--; // Diminui o número da página atual
-        lista_comeca = Math.max(0, lista_comeca - 30); // Atualiza o índice de início da lista de veículos
-        lista_termina = Math.max(30, lista_termina - 30); // Atualiza o índice de término da lista de veículos
+        lista_comeca = Math.max(0, lista_comeca - 20); // Atualiza o índice de início da lista de veículos
+        lista_termina = Math.max(20, lista_termina - 20); // Atualiza o índice de término da lista de veículos
         info_pagina_atual.textContent = pagina_atual; // Atualiza o número da página exibido
         atualizarListaVeiculos(); // Atualiza a lista de veículos ao retroceder uma página
     });
@@ -85,8 +85,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Adiciona um evento de clique ao botão "Avançar"
     botao_adiante.addEventListener("click", function () {
         pagina_atual++; // Aumenta o número da página atual
-        lista_comeca += 30; // Atualiza o índice de início da lista de veículos
-        lista_termina += 30; // Atualiza o índice de término da lista de veículos
+        lista_comeca += 20; // Atualiza o índice de início da lista de veículos
+        lista_termina += 20; // Atualiza o índice de término da lista de veículos
         info_pagina_atual.textContent = pagina_atual; // Atualiza o número da página exibido
         atualizarListaVeiculos(); // Atualiza a lista de veículos ao avançar uma página
     });
