@@ -10,7 +10,7 @@
   height: 50px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #91C9FF;
+  border: 1px solid #ffffff;
   outline: none;
   transition: 1s ease-in-out;
 }
@@ -28,7 +28,7 @@ svg {
 
 .btn:hover {
   transition: 1s ease-in-out;
-  background: #4F95DA;
+  background: #ffffff;
 }
 
 .btn:hover svg {
