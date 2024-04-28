@@ -11,4 +11,4 @@ export class Usuario {
 
     @Column({type: 'text'}) 
     senha: string
-}
+} 

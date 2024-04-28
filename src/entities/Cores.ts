@@ -9,4 +9,4 @@ export class Cor {
     @Column({type: 'text'})
     nome: string
 
-}
+} 

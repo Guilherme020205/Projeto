@@ -11,7 +11,7 @@ export class Foto {
     link: string
 
     @ManyToOne(() => Carro, carro => carro.id)
-    @JoinColumn({name: 'carro_id'})
+    @JoinColumn({name: 'carro'})
     carro: Carro
 
     

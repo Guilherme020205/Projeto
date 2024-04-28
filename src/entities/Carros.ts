@@ -4,6 +4,7 @@ import { Combustivel } from "./Combustivel";
 import { Cor } from "./Cores";
 import { Modelo } from "./Modelos";
 import { Marca } from "./Marcas";
+import { Marcha } from "./Marchas";
 
 @Entity('carros')
 
@@ -11,34 +12,38 @@ export class Carro {
     @PrimaryGeneratedColumn()
     id: number
 
+    @ManyToOne(() => Marca, marca => marca.id)
+    @JoinColumn({ name: 'marca' })
+    marca: Marca
+
+    @ManyToOne(() => Modelo, modelo => modelo.id)
+    @JoinColumn({ name: 'modelo' })
+    modelo: Modelo
+
     @Column({ type: 'text' })
     preco: string
 
-    @Column({ type: 'date' })
+    @Column({ type: 'text' })
     ano: string
 
-    @Column({ type: 'int' })
-    km: string
+    @ManyToOne(() => Cor, cor => cor.id)
+    @JoinColumn({ name: 'cor' })
+    cor: Cor 
 
     @ManyToOne(() => Carroceria, carroceria => carroceria.id)
-    @JoinColumn({ name: 'carroceria_id' })
+    @JoinColumn({ name: 'carroceria' })
     carroceria: Carroceria
 
     @ManyToOne(() => Combustivel, combustivel => combustivel.id)
-    @JoinColumn({ name: 'combustivel_id' })
+    @JoinColumn({ name: 'combustivel' })
     combustivel: Combustivel
-    
-    @ManyToOne(() => Cor, cor => cor.id)
-    @JoinColumn({ name: 'cor_id' })
-    cor: Cor 
 
-    @ManyToOne(() => Modelo, modelo => modelo.id)
-    @JoinColumn({ name: 'modelo_id' })
-    modelo: Modelo
+    @ManyToOne(() => Marcha, marcha => marcha.id)
+    @JoinColumn({ name: 'marcha' })
+    marcha: Marcha
 
-    @ManyToOne(() => Marca, marca => marca.id)
-    @JoinColumn({ name: 'marca_id' })
-    marca: Marca
+    @Column({ type: 'int' })
+    km: string
 
     @Column({ type: 'text' })
     sobre: string
