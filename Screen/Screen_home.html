@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="css/css_home/style_box_principal.css">
     <link rel="stylesheet" href="css/css_botoes/botao1.css">
     <link rel="stylesheet" href="css/css_home/botao_ver_mais.css">
-
+ 
 </head>
 
-<body style="background-color: rgb(58, 57, 57);">
+<body style="background-color: rgb(58, 57, 57); ">
 
 
     <div class="box_principal">
@@ -33,9 +33,9 @@
 
         </div>
         <div class="passar_tela">
-            <button id="botao_volta">volta</button>
+            <button class="button_passa_tela" id="botao_volta">volta</button>
             <p id="pagina_atual"></p>
-            <button id="botao_adiante">adiante</button>
+            <button class="button_passa_tela" id="botao_adiante">adiante</button>
         </div>
     </div>
 
@@ -45,8 +45,11 @@
                 <img src="../img/logo_loja.png" class="logo_com_nome_cabecalho">
             </a>
 
+            <div class="box_2_header">
+                <button class="button_desce_para_rodape" onclick="descepagina()">SOBRE</button>
 
-
+                <p class="p_horario_atendimento">Horário de atendimento: Seg a sex - 8h às 19h | Sáb - 8h às 13h</p>
+            </div>
     </header>
 
     <!-- TELA LOGIN MODAL -->
@@ -170,11 +173,14 @@
 
     </footer>
 
+    <button class="button_sobe_para_cabecalho" onclick="sobepagina()">⬆</button>
+
     <script src="js/script_home/script_mostra_lista.js"></script>
-    <script src="js/script_mostra_rodape.js"></script>
-    <script src="dados/lista_info_veiculos.js"></script>
-    <script src="dados/lista_info_dados_revendedora.js"></script>
     <script src="js/script_home/script_login.js"></script>
+
+    <script src="js/button_desce_e_sobe.js"></script>
+    <script src="dados/lista_info_veiculos.js"></script>
+
 
 
 </body>
