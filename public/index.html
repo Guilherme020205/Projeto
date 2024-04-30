@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Carros</title>
+
+    <link rel="icon" type="image/x-icon" href="images/logo_loja.png">
+
+    <link rel="stylesheet" href="css/style_geral.css">
+    <link rel="stylesheet" href="css/style_cabecalho_e_rodape.css">
+    <link rel="stylesheet" href="css/style_form_login.css">
+    <link rel="stylesheet" href="css/style_box_principal.css">
+    <link rel="stylesheet" href="css/botao1.css">
+    <link rel="stylesheet" href="css/botao_ver_mais.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgb(58, 57, 57);">
+
+
+    <div class="box_principal">
+
+        <div class="box_anucios">
+            <div class="box_veiculos" style="display: none;">
+                <img class="foto_veiculo" width="200" height="150">
+                <h2 class="marca_veiculo"></h2>
+                <p class="preco_veiculo"></p>
+                <p class="ano_veiculo"></p>
+                <button class="ver_mais_btn">Ver mais</button>
+            </div>
+
+        </div>
+        <div class="passar_tela">
+            <button id="botao_volta">volta</button>
+            <p id="pagina_atual"></p>
+            <button id="botao_adiante">adiante</button>
+        </div>
+    </div>
+
+    <header>
+        <div class="box_header">
+            <a href="Screen_home.html">
+                <img src="images/logo_loja.png" class="logo_com_nome_cabecalho">
+            </a>
+
+
+
+    </header>
+
+    <!-- TELA LOGIN MODAL -->
+    <div id="id01" class="modal">
+
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Fechar a tela">&times;</span>
+
+        <form class="modal-content animate">
+
+            <div class="imgcontainer">
+                <img src="images/logo_loja.png" class="logo_com_nome">
+            </div>
+
+            <div class="container2">
+                <label for="usuario"><b>Usuario</b></label>
+                <input type="text" placeholder="Usuario" name="usuario" required>
+
+                <label for="senha"><b>Senha</b></label>
+                <input type="password" placeholder="Senha" name="senha" required>
+
+                <button class="button_login" type="submit">Login</button>
+
+            </div>
+
+        </form>
+    </div>
+    <!-- TELA LOGIN MODAL -->
+
+
+    <footer class="rodape">
+
+        <div class="box_1_rodape">
+
+
+            <p class="p_historia_loja">Em uma fria manhã de outono em 2005, nasceu a "AutoMundo", uma concessionária
+                de
+                carros premium fundada por Miguel Santos, um entusiasta automotivo com uma visão ousada para o
+                mercado
+                de
+                automóveis de luxo. Inspirado pela paixão por carros e pela busca da excelência, Miguel criou a
+                AutoMundo
+                para oferecer uma experiência de compra incomparável, onde o luxo se funde perfeitamente com o
+                desempenho.
+                Localizada em um dos bairros mais prestigiados da cidade, a AutoMundo rapidamente se tornou sinônimo
+                de
+                qualidade e confiabilidade, oferecendo uma seleção cuidadosamente curada de veículos de marcas de
+                renome
+                mundial. Com uma equipe de especialistas dedicados, Miguel transformou a AutoMundo em um destino
+                preferido
+                para clientes exigentes em busca do carro dos seus sonhos. Ao longo dos anos, a concessionária
+                expandiu-se
+                para outras localidades, mantendo sempre o compromisso inabalável com a excelência e a satisfação do
+                cliente.</p>
+
+
+        </div>
+        <div class="box_2_rodape">
+            <div class="box_3_rodape">
+                <img src="images/logo_loja.png" class="logo_com_nome_rodape">
+
+                <!-- BOTÂO DE LOGIN -->
+                <div class="box_button_login">
+                    <div class="center">
+                        <button class="btn" onclick="document.getElementById('id01').style.display='block'">
+                            <svg width="80px" height="50px" viewBox="0 0 80 50" class="border">
+                                <polyline points="58,1 58,59 1,59 1,1 58,1" class="bg-line" />
+                                <polyline points="58,1 58,59 1,59 1,1 58,1" class="hl-line" />
+                            </svg>
+                            <span>Login</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BOTÂO DE LOGIN -->
+            </div>
+
+            <div class="box_4_rodape">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="infos_rodape" href="https://maps.app.goo.gl/mWzyMYA2nogEthbb7">
+                                <p>Av. Pedra Branca, 231, Palhoça SC, 88137-280</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="infos_rodape" href="https://api.whatsapp.com/send?phone=48991872908">
+                                <p>(48) 99187-2908</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="infos_rodape" href="mailto:seemannguilherme@gmail.com" class="email">
+                                <p>seemannguilherme@gmail.com</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a class="infos_rodape" href="https://maps.app.goo.gl/mWzyMYA2nogEthbb7">
+                                <p>Rodovia BR 101 nº km 211, 7235 - Distrito Industrial, São José - SC,
+                                    88104-800
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="infos_rodape" href="https://api.whatsapp.com/send?phone=48991256895">
+                                <p>(48) 99125-6895</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="infos_rodape" href="mailto:seemannguilherme@gmail.com" class="email">
+                                <p>matheussilvabranco@gmail.com</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="js/script_mostra_lista.js"></script>
+    <script type="text/javascript" src="js/lista_info_veiculos.js"></script>
+    <script  type="text/javascript" src="js/script_login.js"></script>
+
+
+</body>
+
+</html>
