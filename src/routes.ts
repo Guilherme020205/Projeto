@@ -8,19 +8,16 @@ import { ModeloController } from "./controllers/modeloController";
 import { CarroController } from "./controllers/carroController";
 import { MarchaController } from "./controllers/marchaController";
 
-const routes = Router()
+const routes = Router();
 
-    routes.post('/usuario', new UsuarioController().create)
-    routes.post('/carro', new CarroController().create)
-   
-    routes.post('/cor', new CorController().create)
-    routes.post('/combustivel', new CombustivelController().create)
-    routes.post('/carroceria', new CarroceriasController().create)
-    routes.post('/marca', new MarcaController().create)
-    routes.post('/modelo', new ModeloController().create)
-    routes.post('/marcha', new MarchaController().create)
+routes.post("/api/usuario", new UsuarioController().create);
+routes.post("/api/carro", new CarroController().create);
 
+routes.post("/api/cor", new CorController().create);
+routes.post("/api/combustivel", new CombustivelController().create);
+routes.post("/api/carroceria", new CarroceriasController().create);
+routes.post("/api/marca", new MarcaController().create);
+routes.post("/api/modelo", new ModeloController().create);
+routes.post("/api/marcha", new MarchaController().create);
 
-export default routes
-
- 
+export default routes;

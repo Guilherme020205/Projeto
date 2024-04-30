@@ -18,7 +18,7 @@ export class UsuarioController {
             return res.status(201).json(newUsuario)
 
         } catch (error) {
-            console.log(error)
+            console.log(error) 
             return res.status(500).json({ mensagem: 'Internal server error' })
         }
     }
