@@ -8,8 +8,6 @@ import { ModeloController } from "./controllers/modeloController";
 import { CarroController } from "./controllers/carroController";
 import { MarchaController } from "./controllers/marchaController";
 
-
-
 const routes = Router()
 
     routes.post('/usuario', new UsuarioController().create)
