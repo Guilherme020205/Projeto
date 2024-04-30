@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!usuarioLogado) {
         alert("Você não está autorizado a acessar esta página. Por favor, faça login.");
-        window.location = "Screen_home.html"
+        window.location = "index.html"
     }
     
 });
