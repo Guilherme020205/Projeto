@@ -81,5 +81,16 @@
         align-items: center;
         gap: 30px;
     }
-
+    
+    .button_passa_tela {
+        background-color: aliceblue;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+        font-family: 'Times New Roman', Times, serif;
+    }
 }

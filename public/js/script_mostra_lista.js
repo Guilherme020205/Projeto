@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    const limite_cards = 20
+
+
     // Função para atualizar a lista de veículos exibida
     function atualizarListaVeiculos() {
         // Obtenção das listas de dados dos veículos
@@ -42,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     let lista_comeca = 0;
-    let lista_termina = 3;
+    let lista_termina = limite_cards;
 
     // Obtém os botões de navegação
     var botao_volta = document.getElementById("botao_volta");
@@ -76,8 +79,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Adiciona um evento de clique ao botão "Voltar"
     botao_volta.addEventListener("click", function () {
         pagina_atual--; // Diminui o número da página atual
-        lista_comeca = Math.max(0, lista_comeca - 3); // Atualiza o índice de início da lista de veículos
-        lista_termina = Math.max(3, lista_termina - 3); // Atualiza o índice de término da lista de veículos
+        lista_comeca = Math.max(0, lista_comeca - limite_cards); // Atualiza o índice de início da lista de veículos
+        lista_termina = Math.max(limite_cards, lista_termina - limite_cards); // Atualiza o índice de término da lista de veículos
         info_pagina_atual.textContent = pagina_atual; // Atualiza o número da página exibido
         atualizarListaVeiculos(); // Atualiza a lista de veículos ao retroceder uma página
     });
@@ -85,8 +88,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Adiciona um evento de clique ao botão "Avançar"
     botao_adiante.addEventListener("click", function () {
         pagina_atual++; // Aumenta o número da página atual
-        lista_comeca += 3; // Atualiza o índice de início da lista de veículos
-        lista_termina += 3; // Atualiza o índice de término da lista de veículos
+        lista_comeca += limite_cards; // Atualiza o índice de início da lista de veículos
+        lista_termina += limite_cards; // Atualiza o índice de término da lista de veículos
         info_pagina_atual.textContent = pagina_atual; // Atualiza o número da página exibido
         atualizarListaVeiculos(); // Atualiza a lista de veículos ao avançar uma página
     });
