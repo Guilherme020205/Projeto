@@ -2,3 +2,10 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    zoom: 1;
+    background-color: rgb(58, 57, 57);
+    /* user-select:none */
+}
+
