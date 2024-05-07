@@ -1,0 +1,33 @@
+@media (min-width: 1300px) {
+    .passar_tela {
+        background-color: var(--cor-fundo-um);
+        width: auto;
+        padding: 1.2% 2% 1.2% 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border-radius: 5px;
+    }
+
+    .passar_tela>button {
+        background-color: rgb(240, 238, 238);
+        width: 80px;
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border-radius: 5px;
+    }
+    .passar_tela>button:hover {
+        background-image: url("https://cdn.pixabay.com/animation/2022/10/14/01/03/01-03-02-387_512.gif");
+        background-color: rgb(255, 255, 255);
+    }
+
+    .passar_tela>p {
+        color: rgb(255, 255, 255);
+    }
+}

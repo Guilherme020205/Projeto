@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const limite_cards = 20
+    const limite_cards = 2
 
 
     // Função para atualizar a lista de veículos exibida

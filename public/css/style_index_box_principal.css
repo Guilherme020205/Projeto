@@ -1,5 +1,3 @@
-
-
 @media (min-width: 1300px) {
 
     .box_principal {
@@ -70,17 +68,6 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         margin-bottom: 10%;
 
-    }
-
-    .passar_tela {
-        background-color: var(--cor-fundo-um);
-        width: auto;
-        padding: 1%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
     }
     
     .button_passa_tela {
