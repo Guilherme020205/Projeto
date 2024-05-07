@@ -1,11 +1,17 @@
+:root {
+    --cor-fundo-um: rgb(5, 88, 80);
+    --cor-fundo-dois: rgb(145, 142, 142);
+    --cor-fundo-tres: rgb(255, 255, 255);
+    --cor-fundo-quatro: rgb(58, 57, 57);
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-body{
-    zoom: 1;
-    background-color: rgb(58, 57, 57);
-    /* user-select:none */
+body {
+    zoom: 0.9;
+    background-color: var(--cor-fundo-quatro);
+    user-select: none
 }
-

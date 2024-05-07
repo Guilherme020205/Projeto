@@ -14,7 +14,7 @@
   }
 
   .button_login {
-    background-color: #047371;
+    background-color:var(--cor-fundo-um);
     color: rgb(255, 255, 255);
     padding: 14px 20px;
     margin: 8px 0;
@@ -67,7 +67,7 @@
 
   /* Modal Content/Box */
   .modal-content {
-    background: linear-gradient(180deg, rgba(0,0,0,1) 3%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 100%); 
+    background: linear-gradient(180deg, var(--cor-fundo-um) 3%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 100%); 
     margin: 5px auto;
     /* 15% from the top and centered */
     border: 1px solid #888;

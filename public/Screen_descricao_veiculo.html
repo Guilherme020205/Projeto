@@ -21,8 +21,8 @@
   <link rel="stylesheet" href="css/style_form_login.css">
   <link rel="stylesheet" href="css/botao_login.css">
   <link rel="stylesheet" href="css/botão_descricao_voltar.css">
-
-
+  <link rel="stylesheet" href="css/style_descricaolista_car_descricao.css">
+  <link rel="stylesheet" href="css/botao_ver_mais.css">
 
   <title>Descrição do Veículo</title>
 </head>
@@ -40,6 +40,7 @@
         <p class="p_horario_atendimento">Horário de atendimento: Seg a sex - 8h às 19h | Sáb - 8h às 13h</p>
       </div>
   </header>
+
   <div class="box_principal">
     <a class="button_voltar" href="index.html">Voltar</a>
     <div class="box_2">
@@ -104,6 +105,32 @@
     </div>
 
   </div>
+
+
+
+
+
+
+  
+
+  <div class="box_lista_car_descricao">
+
+    <div class="box_anucioslista_car_descricao">
+        <div class="box_veiculoslista_car_descricao" style="display: none;">
+            <img class="foto_veiculolista_car_descricao" width="200" height="150">
+            <h2 class="marca_veiculolista_car_descricao"></h2>
+            <p class="preco_veiculolista_car_descricao"></p>
+            <p class="ano_veiculolista_car_descricao"></p>
+            <button class="ver_mais_btn">Ver mais</button>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
 
   <!-- TELA LOGIN MODAL -->
   <div id="id01" class="modal">
@@ -231,5 +258,6 @@
   <script src="js/script_descricao_veiculo.js"></script>
   <script src="js/lista_info_veiculos.js"></script>
 </body>
+<script src="js/script_mostra_lista_na_descricao.js"></script>
 
 </html>

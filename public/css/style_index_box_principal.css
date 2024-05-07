@@ -1,7 +1,9 @@
+
+
 @media (min-width: 1300px) {
 
     .box_principal {
-        background-color: rgba(254, 254, 254, 0.47);
+        background-color: var(--cor-fundo-dois);
         width: fit-content;
         padding: 1%;
         display: flex;
@@ -26,7 +28,7 @@
 
     .box_veiculos {
 
-        background-color: rgba(255, 255, 255, 0.868);
+        background-color: var(--cor-fundo-tres);
         width: auto;
         height: 280px;
         padding: 1%;
@@ -71,7 +73,7 @@
     }
 
     .passar_tela {
-        background-color: rgba(0, 255, 229, 0.334);
+        background-color: var(--cor-fundo-um);
         width: auto;
         padding: 1%;
         display: flex;
