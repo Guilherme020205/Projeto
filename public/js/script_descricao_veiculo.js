@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const box_foto = document.querySelector('.carousel-inner');
         // const box_foto2 = document.querySelector('.carousel-item');
-        const box_descricao_pai = document.querySelector('.box_descricao_pai_veiculo');
-        const box_descricao_filho = document.querySelector('.box_descricao_filho_veiculo');
+        const box_descricao_pai = document.querySelector('.box_descricao_1');
+        const box_descricao_filho = document.querySelector('.box_descricao_2');
 
         for (let i = 0; i < lista_inscricao_veiculos.length; i++) {
             if (carroSelecionado == lista_inscricao_veiculos[i]) {
@@ -35,16 +35,14 @@ document.addEventListener('DOMContentLoaded', function () {
                             img.src = foto_veiculo;
                             img.classList.add('d-block');
                             img.classList.add('w-100');
-                            img.width = 100;
-                            img.height = 300;
+                            img.height = 500;
                             container.appendChild(img);
                         } else {
                             const img = document.createElement('img');
                             img.src = "https://portal.crea-sc.org.br/wp-content/uploads/2017/11/imagem-indisponivel-para-produtos-sem-imagem_15_5.jpg";
                             img.classList.add('d-block');
                             img.classList.add('w-100');
-                            img.width = 100;
-                            img.height = 300;
+                            img.height = 500;
                             container.appendChild(img);
                         }
                         box_foto.appendChild(container);
@@ -55,16 +53,14 @@ document.addEventListener('DOMContentLoaded', function () {
                             img.src = foto_veiculo;
                             img.classList.add('d-block');
                             img.classList.add('w-100');
-                            img.width = 100;
-                            img.height = 300;
+                            img.height = 500;
                             container.appendChild(img);
                         } else {
                             const img = document.createElement('img');
                             img.src = "https://portal.crea-sc.org.br/wp-content/uploads/2017/11/imagem-indisponivel-para-produtos-sem-imagem_15_5.jpg";
                             img.classList.add('d-block');
                             img.classList.add('w-100');
-                            img.width = 100;
-                            img.height = 300;
+                            img.height = 500;
                             container.appendChild(img);
                         }
                         box_foto.appendChild(container);
@@ -78,27 +74,27 @@ document.addEventListener('DOMContentLoaded', function () {
                 preco_veiculo.textContent = 'R$ ' + lista_preco[i];
 
                 const modelo_veiculo = box_descricao_pai.querySelector('.modelo_veiculo');
-                modelo_veiculo.textContent = 'Modelo: ' + lista_modelo[i];
+                modelo_veiculo.textContent = lista_modelo[i];
 
                 const ano_veiculo = box_descricao_pai.querySelector('.ano_veiculo');
-                ano_veiculo.textContent = 'Ano: ' + lista_ano[i];
+                ano_veiculo.textContent = lista_ano[i];
 
                 const km_veiculo = box_descricao_pai.querySelector('.km_veiculo');
-                km_veiculo.textContent = 'KM: ' + lista_km[i];
+                km_veiculo.textContent = lista_km[i];
 
                 const cor_veiculo = box_descricao_pai.querySelector('.cor_veiculo');
-                cor_veiculo.textContent = 'Cor: ' + lista_cor[i];
+                cor_veiculo.textContent = lista_cor[i];
 
                 const combustivel_veiculo = box_descricao_pai.querySelector('.combustivel_veiculo');
-                combustivel_veiculo.textContent = 'Combustível: ' + lista_combustivel[i];
+                combustivel_veiculo.textContent = lista_combustivel[i];
 
                 const marcha_veiculo = box_descricao_pai.querySelector('.marcha_veiculo');
-                marcha_veiculo.textContent = 'Marcha: ' + lista_marcha[i];
+                marcha_veiculo.textContent = lista_marcha[i];
                 const carroceria_veiculo = box_descricao_pai.querySelector('.carroceria_veiculo');
-                carroceria_veiculo.textContent = 'Carroceria: ' + lista_carroceria[i];
+                carroceria_veiculo.textContent = lista_carroceria[i];
 
                 const sobre_veiculo = box_descricao_filho.querySelector('.sobre_veiculo');
-                sobre_veiculo.textContent = 'Sobre este carro: ' + lista_sobre[i];
+                sobre_veiculo.textContent = lista_sobre[i];
 
 
                 break;
