@@ -77,24 +77,24 @@ document.addEventListener('DOMContentLoaded', function () {
                 modelo_veiculo.textContent = lista_modelo[i];
 
                 const ano_veiculo = box_descricao_pai.querySelector('.ano_veiculo');
-                ano_veiculo.textContent = 'Ano: ' + lista_ano[i];
+                ano_veiculo.textContent = lista_ano[i];
 
                 const km_veiculo = box_descricao_pai.querySelector('.km_veiculo');
-                km_veiculo.textContent = 'KM: ' + lista_km[i];
+                km_veiculo.textContent = lista_km[i];
 
                 const cor_veiculo = box_descricao_pai.querySelector('.cor_veiculo');
-                cor_veiculo.textContent = 'Cor: ' + lista_cor[i];
+                cor_veiculo.textContent = lista_cor[i];
 
                 const combustivel_veiculo = box_descricao_pai.querySelector('.combustivel_veiculo');
-                combustivel_veiculo.textContent = 'Combustível: ' + lista_combustivel[i];
+                combustivel_veiculo.textContent = lista_combustivel[i];
 
                 const marcha_veiculo = box_descricao_pai.querySelector('.marcha_veiculo');
-                marcha_veiculo.textContent = 'Marcha: ' + lista_marcha[i];
+                marcha_veiculo.textContent = lista_marcha[i];
                 const carroceria_veiculo = box_descricao_pai.querySelector('.carroceria_veiculo');
-                carroceria_veiculo.textContent = 'Carroceria: ' + lista_carroceria[i];
+                carroceria_veiculo.textContent = lista_carroceria[i];
 
                 const sobre_veiculo = box_descricao_filho.querySelector('.sobre_veiculo');
-                sobre_veiculo.textContent = 'Sobre este carro: ' + lista_sobre[i];
+                sobre_veiculo.textContent = lista_sobre[i];
 
 
                 break;

@@ -1,36 +1,76 @@
-.box_principal  {
-    padding: 5px;
+@media (min-width: 1300px) {
+
+  .box_principal {
+    margin-top: 200px;
+
     background-color: aliceblue;
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    
-}
-
-.box_2  {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 20%;
-    
-}  
-
-.box_descricao_1 {
-    background-color: aqua;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-.info{
-    background-color: rgb(115, 255, 0);
+    padding: 10px;
+  }
+
+  .box_descricao_1>.h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    /* cor do texto */
+    text-transform: uppercase;
+  }
+  .preco_veiculo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #034303;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    text-align: end;
+  }
+
+
+  .box_2 {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-}
-#linha-horizontal {
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-item {
+    width: calc(33.33% - 20px);
+    /* 33.33% de largura com 20px de espaçamento */
+    margin: 10px;
+    /* Espaçamento entre os elementos */
+  }
+
+  .flex-item>p {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+  }
+
+  .flex-item>h2 {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 18px;
+  }
+
+  #linha-horizontal {
     width: 100%;
-    height: 5px; /* Altura da fita */
+    height: 5px;
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: black;
   }
+
+  .box_descricao_2 {
+    padding: 50px;
+  }
+
+  .sobre_veiculo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: black;
+  }
+}
