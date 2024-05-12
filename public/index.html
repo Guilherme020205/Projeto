@@ -19,9 +19,10 @@
     <link rel="stylesheet" href="css/botao_ver_mais.css">
 
     <link rel="stylesheet" href="css/style_index_passar_tela.css">
-    
-    
-    </head>
+
+    <link rel="stylesheet" href="css/style_index_bemvindo.css">
+
+</head>
 
 <body>
     <header>
@@ -37,26 +38,61 @@
             </div>
     </header>
 
-    <div class="box_principal">
-
-        <div class="box_anucios">
-            <div class="box_veiculos" style="display: none;">
-                <img class="foto_veiculo" width="200" height="150">
-                <h2 class="marca_veiculo"></h2>
-                <p class="preco_veiculo"></p>
-                <p class="ano_veiculo"></p>
-                <button class="ver_mais_btn">Ver mais</button>
+    <div class="box_bemvindo">
+        <div class="box_foto_time">
+            <img class="foto_time" src="images/phototime.png">
+            <div class="texto_msg">
+                <p>Seu apoio é fundamental para o nosso crescimento e nos motiva a continuar trabalhando para oferecer o
+                    melhor serviço possível.</p>
             </div>
-
         </div>
-        <div class="passar_tela">
-            <button id="botao_volta">volta</button>
-            <p id="pagina_atual"></p>
-            <button id="botao_adiante">adiante</button>
+        <div class="box_msg_bemvindo">
+            <p class="msg_bemvindo">Bem Vindo!</p>
         </div>
     </div>
 
-    
+    <div class="box_principal">
+
+        <div class="box_anucios">
+
+            <div class="box_veiculos" style="display: none;">
+                <img class="foto_veiculo" width="296" height="250">
+
+                <div style="padding: 10px;">
+                    <div class="box_nome_preco">
+                        <h2 class="marca_veiculo"></h2>
+                        <p class="preco_veiculo"></p>
+                    </div>
+
+                    <div style="width: 100%;
+                                            height: 2px;
+                                            margin-top: 5px;
+                                            margin-bottom: 5px;
+                                            background-color: black;">
+                    </div>
+
+                    <div class="box_ano_km">
+                        <p class="ano_veiculo"></p>
+                        <p class="km_veiculo"></p>
+                    </div>
+
+                    <button class="ver_mais_btn">Ver mais</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="passar_tela">
+            <button id="botao_volta">⬅</button>
+            <p id="pagina_atual"></p>
+            <button id="botao_adiante" style=" -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);">⬅</button>
+        </div>
+    </div>
+
+
 
     <!-- TELA LOGIN MODAL -->
     <div id="id01" class="modal" style="z-index: 999999">
@@ -90,7 +126,11 @@
 
         <div class="box_1_rodape">
 
-
+            <div class="box_imagens">
+                <img class="imagem1_box" src="images/img_loja_1.jpg">
+                <img class="imagem2_box" src="images/img_loja_2.jpeg">
+                <img class="imagem3_box" src="images/img_loja_3.jpeg">
+            </div>
             <p class="p_historia_loja">Em uma fria manhã de outono em 2005, nasceu a "AutoMundo", uma concessionária
                 de
                 carros premium fundada por Miguel Santos, um entusiasta automotivo com uma visão ousada para o
@@ -121,7 +161,7 @@
                 <div class="box_button_login">
                     <div class="center">
                         <button class="btn" onclick="document.getElementById('id01').style.display='block'">
-                           
+
                             <span>Login</span>
                         </button>
                     </div>
@@ -176,12 +216,12 @@
 
     </footer>
 
-    <button class="button_sobe_para_cabecalho" onclick="sobepagina()">⬆</button>
+    <button class="button_sobe_para_cabecalho" id="scrollButton" onclick="scrollToTop()">⬆</button>
 
     <script type="text/javascript" src="js/script_mostra_lista.js"></script>
     <script type="text/javascript" src="js/lista_info_veiculos.js"></script>
-    <script  type="text/javascript" src="js/script_login.js"></script>
-    <script  type="text/javascript" src="js/button_desce_e_sobe.js"></script>
+    <script type="text/javascript" src="js/script_login.js"></script>
+    <script type="text/javascript" src="js/button_desce_e_sobe.js"></script>
 
 </body>
 

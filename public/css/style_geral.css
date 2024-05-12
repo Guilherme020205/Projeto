@@ -1,8 +1,17 @@
-:root {
-    --cor-fundo-um: rgb(5, 88, 80);
+:root { 
+    --cor-gradiente-um: #000000;
+    --cor-gradiente-dois: rgb(172, 172, 172) ;
+    --cor-gradiente-tres: #373636;
+    --cor-gradiente-quatro: #ffffff; 
+    --cor-gradiente-cinco: #94B9FF; 
+    --cor-gradiente-seis: #CDFFD8; 
+    
+    --cor-background-body: #ffffff;
+ 
+    --cor-fundo-um: rgb(255, 255, 255);
     --cor-fundo-dois: rgb(145, 142, 142);
-    --cor-fundo-tres: rgb(255, 255, 255);
-    --cor-fundo-quatro: rgb(58, 57, 57);
+    --cor-box-veiculos: rgb(255, 255, 255);
+    
 }
 
 * {
@@ -12,6 +21,6 @@
 
 body {
     zoom: 0.9;
-    background-color: var(--cor-fundo-quatro);
+    background-color: var(--cor-background-body);
     user-select: none
 }

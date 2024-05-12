@@ -3,8 +3,9 @@
     header {
 
         width: 100%;
-        background-color: var(--cor-fundo-um);
-        box-shadow: 0px 0px 20px rgba(5, 221, 185, 0.779);
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, var(--cor-gradiente-um) 0%, var(--cor-gradiente-dois) 100%);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.779);
         position: fixed;
         top: 0;
         z-index: 99999;
@@ -31,12 +32,12 @@
     }
 
     .button_desce_para_rodape {
-
+ 
         background-color: Transparent;
         border: none;
         cursor: pointer;
         font-size: 20px;
-        color: aliceblue;
+        color: rgb(255, 255, 255);
         font-weight: bolder;
         font-family: 'Times New Roman', Times, serif;
 
@@ -56,7 +57,6 @@
         font-size: 40px;
         border-radius: 45%;
         cursor: pointer;
-
     }
 
     .p_horario_atendimento {
@@ -67,7 +67,6 @@
     }
 
     footer {
-
         width: auto;
         height: 0px;
         margin-top: 50px;
@@ -89,15 +88,15 @@
     .box_1_rodape>.p_historia_loja {
 
         display: flex;
-        position: sticky;
-        color: aliceblue;
+        color: rgb(0, 0, 0);
         bottom: 0;
         padding: 50px;
 
     }
 
     .box_2_rodape {
-        background-color: var(--cor-fundo-um);
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, var(--cor-gradiente-um) 0%, var(--cor-gradiente-dois) 100%);
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -139,7 +138,7 @@
 
     .infos_rodape {
         text-decoration: none;
-        color: #000000;
+        color: #ffffff;
         font-family: 'Montserrat', sans-serif;
         margin-bottom: 0.5px;
     }
@@ -149,5 +148,28 @@
         transform: rotate(10deg);
     }
 
+    .box_imagens{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    .imagem1_box {
+        border-radius: 100%;
+        width: 230px;
+        height: 200px;
+    }
+    .imagem2_box {
+        border-radius: 5%;
+        width: 500px;
+        height: 200px;
+    }
+    .imagem3_box {
+        border-radius: 0 100% 0 0;
+        width: 230px;
+        height: 200px;
+    }
 
 }

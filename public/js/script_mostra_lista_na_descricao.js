@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const lista_marca = marcas_veiculos;
         const lista_preco = precos_veiculos;
         const lista_ano = anos_veiculos;
+        const lista_km = km_veiculos;
 
         // Obtenção do template e do container onde os veículos serão exibidos
         const template = document.querySelector('.box_veiculoslista_car_descricao');
@@ -27,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
             clone.querySelector('.marca_veiculolista_car_descricao').textContent = lista_marca[indice];
             clone.querySelector('.preco_veiculolista_car_descricao').textContent = 'R$ ' + lista_preco[indice];
             clone.querySelector('.ano_veiculolista_car_descricao').textContent = lista_ano[indice];
+            clone.querySelector('.km_veiculolista_car_descricao').textContent = lista_km[indice] + " km";
+
             clone.style.display = "block";
 
             // Adiciona um evento de clique ao botão "Ver Mais"
@@ -35,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 localStorage.setItem('carro_visto', carro_visto);
                 location.href = "Screen_descricao_veiculo.html";
             });
-
+ 
             container.appendChild(clone); // Adiciona o veículo clonado ao container
         });
 

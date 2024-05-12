@@ -20,9 +20,10 @@
 
   <link rel="stylesheet" href="css/style_form_login.css">
   <link rel="stylesheet" href="css/botao_login.css">
-  <link rel="stylesheet" href="css/botão_descricao_voltar.css">
   <link rel="stylesheet" href="css/style_descricaolista_car_descricao.css">
   <link rel="stylesheet" href="css/botao_ver_mais.css">
+
+
 
   <title>Descrição do Veículo</title>
 </head>
@@ -42,7 +43,7 @@
   </header>
 
   <div class="box_principal">
-    <a class="button_voltar" href="index.html">Voltar</a>
+    <a class="button_voltar" href="index.html" style="width: fit-content;">Voltar</a>
     <div class="box_2">
 
       <div class="box_descricao_1">
@@ -98,7 +99,11 @@
       </div>
     </div>
 
-    <div id="linha-horizontal"></div>
+    <div id="linha-horizontal" style="width: 100%;
+    height: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: black;"></div>
 
     <div class="box_descricao_2">
       <p class="sobre_veiculo"></p>
@@ -109,23 +114,54 @@
 
 
 
+  <!-- <div class="box_anucioslista_car_descricao">
+    <div class="box_veiculoslista_car_descricao" style="display: none;">
+      <img class="foto_veiculolista_car_descricao" width="200" height="150">
+      <h2 class="marca_veiculolista_car_descricao"></h2>
+      <p class="preco_veiculolista_car_descricao"></p>
+      <p class="ano_veiculolista_car_descricao"></p>
+      <p class="km_veiculolista_car_descricao"></p>
+      <button class="ver_mais_btn">Ver mais</button>
+    </div>
+
+  </div> -->
 
 
-  
 
   <div class="box_lista_car_descricao">
-
+    <p class="susgestoes">Sugestões</p>
+    
     <div class="box_anucioslista_car_descricao">
-        <div class="box_veiculoslista_car_descricao" style="display: none;">
-            <img class="foto_veiculolista_car_descricao" width="200" height="150">
+
+      <div class="box_veiculoslista_car_descricao" style="display: none;">
+        <img class="foto_veiculolista_car_descricao" width="296" height="250">
+
+        <div style="padding: 10px;">
+          <div class="box_nome_precolista_car_descricao">
             <h2 class="marca_veiculolista_car_descricao"></h2>
             <p class="preco_veiculolista_car_descricao"></p>
+          </div>
+
+          <div style="width: 100%;
+                                    height: 2px;
+                                    margin-top: 5px;
+                                    margin-bottom: 5px;
+                                    background-color: black;">
+          </div>
+
+          <div class="box_ano_kmlista_car_descricao">
             <p class="ano_veiculolista_car_descricao"></p>
-            <button class="ver_mais_btn">Ver mais</button>
+            <p class="km_veiculolista_car_descricao"></p>
+          </div>
+
+          <button class="ver_mais_btn">Ver mais</button>
         </div>
+      </div>
 
     </div>
-</div>
+  </div>
+
+
 
 
 
@@ -249,7 +285,7 @@
 
   </footer>
 
-  <button class="button_sobe_para_cabecalho" onclick="sobepagina()">⬆</button>
+  <button class="button_sobe_para_cabecalho" id="scrollButton" onclick="scrollToTop()">⬆</button>
 
   <script type="text/javascript" src="js/script_login.js"></script>
   <script type="text/javascript" src="js/button_desce_e_sobe.js"></script>
