@@ -25,11 +25,10 @@
     }
 
     .box_anucioslista_car_descricao{
-         
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        gap: 100px;
+        gap: 70px;
         align-items: center;
         justify-content: center;
     }
@@ -38,11 +37,26 @@
 
         background-color: var(--cor-box-veiculos);
         width: 298px;
-        height: 400px;
+        height: 410px;
         border-radius: 0 0 10px 10px;
         border: 2px solid rgb(0, 0, 0);
 
     }
+
+    .box_nome_precolista_car_descricao {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-bottom: 10px;
+    }
+
+    .box_ano_kmlista_car_descricao {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        overflow: hidden;
+    }
+
 
     .foto_veiculolista_car_descricao {
         box-shadow: 1px 1px 5px black;
@@ -52,32 +66,34 @@
     }
 
     .foto_veiculolista_car_descricao:hover {
-        transform: scale(2.00);
+        transform: scale(1.1);
         box-shadow: 0 0 100px rgb(63, 66, 66);
         border-radius: 0px;
     }
 
     .marca_veiculolista_car_descricao {
-        margin-top: 5px ;
         font-size: 120%;
         font-weight: bold;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         margin-bottom: 4%;
-
+        width: 50%;
+        text-align: left;
     }
 
     .preco_veiculolista_car_descricao {
         font-size: 90%;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin-bottom: 2%;
-
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 10%;
+        width: 50%;
+        text-align: left;
     }
 
     .ano_veiculolista_car_descricao {
         font-size: 90%;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         margin-bottom: 10%;
-
+        width: 50%;
+        text-align: left;
     }
     .km_veiculo {
         font-size: 90%;

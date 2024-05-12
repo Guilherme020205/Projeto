@@ -1,4 +1,4 @@
-const inscricao_veiculos = ['1', '2', '3', '4', '5', '6','7', '','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','']
+const inscricao_veiculos = ['1', '2', '3', '4', '5', '6','7']
 const marcas_veiculos = ['FERRARI', 'BMW', 'NISSAN', 'FERRARI', 'BMW', 'NISSAN', 'fusca']
 const modelos_veiculos = ['FERRARI ROMA', 'BMW X4', 'NISSAN KICKS', 'FERRARI ROMA', 'BMW X4', 'NISSAN KICKS', 'fusca']
 const precos_veiculos = ['3.150.000', '559.900', '107.900', '3.150.000', '559.900', '107.900', 'fusca']
