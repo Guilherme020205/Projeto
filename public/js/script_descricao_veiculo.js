@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 ano_veiculo.textContent = lista_ano[i];
 
                 const km_veiculo = box_descricao_pai.querySelector('.km_veiculo');
-                km_veiculo.textContent = lista_km[i];
+                km_veiculo.textContent = lista_km[i] + " km";
 
                 const cor_veiculo = box_descricao_pai.querySelector('.cor_veiculo');
                 cor_veiculo.textContent = lista_cor[i];

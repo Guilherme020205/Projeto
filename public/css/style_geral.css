@@ -1,11 +1,26 @@
+:root { 
+    --cor-gradiente-um: #000000;
+    --cor-gradiente-dois: rgb(172, 172, 172) ;
+    --cor-gradiente-tres: #373636;
+    --cor-gradiente-quatro: #ffffff; 
+    --cor-gradiente-cinco: #94B9FF; 
+    --cor-gradiente-seis: #CDFFD8; 
+    
+    --cor-background-body: #ffffff;
+ 
+    --cor-fundo-um: rgb(255, 255, 255);
+    --cor-fundo-dois: rgb(145, 142, 142);
+    --cor-box-veiculos: rgb(255, 255, 255);
+    
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-body{
-    zoom: 1;
-    background-color: rgb(58, 57, 57);
-    /* user-select:none */
+body {
+    zoom: 0.9;
+    background-color: var(--cor-background-body);
+    user-select: none
 }
-

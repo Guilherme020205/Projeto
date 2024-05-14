@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const limite_cards = 20
+    const limite_cards = 19
 
 
     // Função para atualizar a lista de veículos exibida
@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const lista_marca = marcas_veiculos;
         const lista_preco = precos_veiculos;
         const lista_ano = anos_veiculos;
+        const lista_km = km_veiculos;
 
         // Obtenção do template e do container onde os veículos serão exibidos
         const template = document.querySelector('.box_veiculos');
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             clone.querySelector('.marca_veiculo').textContent = lista_marca[i];
             clone.querySelector('.preco_veiculo').textContent = 'R$ ' + lista_preco[i];
             clone.querySelector('.ano_veiculo').textContent = lista_ano[i];
+            clone.querySelector('.km_veiculo').textContent = lista_km[i] + " km"; 
             clone.style.display = "block";
 
             // Adiciona um evento de clique ao botão "Ver Mais"
@@ -83,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
         lista_termina = Math.max(limite_cards, lista_termina - limite_cards); // Atualiza o índice de término da lista de veículos
         info_pagina_atual.textContent = pagina_atual; // Atualiza o número da página exibido
         atualizarListaVeiculos(); // Atualiza a lista de veículos ao retroceder uma página
+        window. scrollTo(0, 0)
     });
 
     // Adiciona um evento de clique ao botão "Avançar"
@@ -92,6 +95,8 @@ document.addEventListener('DOMContentLoaded', function () {
         lista_termina += limite_cards; // Atualiza o índice de término da lista de veículos
         info_pagina_atual.textContent = pagina_atual; // Atualiza o número da página exibido
         atualizarListaVeiculos(); // Atualiza a lista de veículos ao avançar uma página
+        window. scrollTo(0, 0)
+
     });
 
     // Chamando a função para exibir os primeiros veículos ao carregar a página

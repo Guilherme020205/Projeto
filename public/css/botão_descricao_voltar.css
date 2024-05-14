@@ -1,16 +1,18 @@
-.button_voltar {
-    display: inline-block;
-    padding: 10px 20px;
-     text-decoration: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    width: fit-content;
-    margin: 15px 0px 50px 50px;
-
+/* Style for the scroll button */
+#scrollButton {
+  display: none; /* Hide the button by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999999;
+  padding: 15px; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.button_voltar:hover {
-    background-color: #053608;
+#scrollButton:hover {
+  background-color: #0056b3;
 }

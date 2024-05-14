@@ -1,62 +1,77 @@
 @media (min-width: 1300px) {
 
-    .box_principal {
-        width: fit-content;
+    .box_lista_car_descricao {
+        background-color: var(--cor-fundo-dois);
+        background-repeat: no-repeat; 
+        background-size: 100%;
+        border-radius: 15px;
+        height: 260px;   
+        padding-right: 10px;
+        margin-right: 5px;
+        background-image: url("https://uploads.spiritfanfiction.com/historias/capitulos/202005/never-not-jikook-19231490-060520202251.gif");
         padding: 1%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 8%;
-        gap: 50px;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 15%;
         margin-top: 200px;
-        border-radius: 5px;
+        border-radius: 50px;
 
     }
 
-    .box_anucios {
-        width: 1240px;
+    .susgestoes{
+        color: #fff;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .box_anucioslista_car_descricao{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
-        margin-left: 2%;
-
+        gap: 70px;
+        align-items: center;
+        justify-content: center;
     }
+    
+    .box_veiculoslista_car_descricao {
 
-    .box_veiculos {
         background-color: var(--cor-box-veiculos);
         width: 298px;
         height: 410px;
         border-radius: 0 0 10px 10px;
         border: 2px solid rgb(0, 0, 0);
+
     }
 
-
-    .box_nome_preco {
+    .box_nome_precolista_car_descricao {
         display: flex;
         flex-direction: row;
         gap: 30px;
         margin-bottom: 10px;
     }
 
-    .box_ano_km {
+    .box_ano_kmlista_car_descricao {
         display: flex;
         flex-direction: row;
         gap: 30px;
         overflow: hidden;
     }
 
-    .foto_veiculo {
-        box-shadow: 1px 1px 5px rgb(0, 0, 0);
+
+    .foto_veiculolista_car_descricao {
+        box-shadow: 1px 1px 5px black;
         margin-bottom: 1%;
+        border-radius:5px;
         transition: all 0.3s ease-in-out;
     }
 
-    .foto_veiculo:hover {
+    .foto_veiculolista_car_descricao:hover {
+        transform: scale(1.1);
         box-shadow: 0 0 100px rgb(63, 66, 66);
         border-radius: 0px;
     }
 
-    .marca_veiculo {
+    .marca_veiculolista_car_descricao {
         font-size: 120%;
         font-weight: bold;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -65,16 +80,7 @@
         text-align: left;
     }
 
-    .preco_veiculo {
-
-         font-size: 90%;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        margin-bottom: 10%;
-        width: 50%;
-        text-align: left;
-    }
-
-    .ano_veiculo {
+    .preco_veiculolista_car_descricao {
         font-size: 90%;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         margin-bottom: 10%;
@@ -82,6 +88,13 @@
         text-align: left;
     }
 
+    .ano_veiculolista_car_descricao {
+        font-size: 90%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: 10%;
+        width: 50%;
+        text-align: left;
+    }
     .km_veiculo {
         font-size: 90%;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -90,5 +103,4 @@
         text-align: right;
     }
 
-  
 }

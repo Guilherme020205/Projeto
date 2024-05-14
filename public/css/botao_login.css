@@ -2,6 +2,7 @@
   width: 58px;
   height: 50px;
   position: absolute;
+  margin-bottom: 50px;
 }
 
 .btn {
@@ -28,7 +29,8 @@ svg {
 
 .btn:hover {
   transition: 1s ease-in-out;
-  background: #ffffff;
+  background: #3a3a3a;
+
 }
 
 .btn:hover svg {
@@ -36,7 +38,7 @@ svg {
 }
 
 .btn span {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 13px;
   font-weight: 100;
 }
