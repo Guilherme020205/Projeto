@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const limite_cards = 5; // Alterado para exibir apenas 4 carros aleatoriamente
+    const limite_cards = 4; // Alterado para exibir apenas 4 carros aleatoriamente
 
     // Função para atualizar a lista de veículos exibida
     function atualizarListaVeiculos() {

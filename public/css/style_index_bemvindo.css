@@ -4,6 +4,7 @@
         flex-direction: column;
 
     }
+
     .box_foto_time {
         background: black;
         background: linear-gradient(250deg, var(--cor-gradiente-quatro) 20%, var(--cor-gradiente-seis) 50%, var(--cor-gradiente-cinco) 100%);
@@ -13,14 +14,14 @@
         border-radius: 150px 50px 50px 110px;
         display: flex;
         flex-direction: row;
-        gap: 520px;
+        gap: 400px;
         align-items: center;
         font-weight: bold;
     }
 
     .foto_time {
-        width: 400px;
-        height:400px;
+        width: 300px;
+        height: 300px;
     }
 
     .texto_msg {
@@ -34,13 +35,14 @@
 
     .box_msg_bemvindo {
         background-color: #A46730;
-        width: 1200px;
+        width: 1000px;
         border-radius: 0px 30px 100px 0px;
     }
+
     .msg_bemvindo {
-        margin-left:480px;
-        margin-top: 58px;
-        margin-bottom: 58px;
+        margin-left: 480px;
+        margin-top: 15px;
+        margin-bottom: 20px;
         font-family: Apple Chancery, cursive;
         font-weight: bold;
         font-size: 50px;
